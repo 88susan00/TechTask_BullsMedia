@@ -218,16 +218,9 @@ journalctl -u techtask.service -f
 
 ---
 
-## 📜 Історія комітів (Commit Conventions)
-
-Репозиторій сформовано згідно з вимогами атомарних комітів (Conventional Commits):
-
-* `chore: initialize project structure` — базове створення структури проекту
-* `feat: add static website containers` — конфігурація та сторінки для site1, site2
-* `feat: add PHP demo application` — реалізація сервісу site3 та healthz
-* `fix: correct PHP upstream port in nginx` — узгодження портів проксі та додатка
-* `Add nginx config files` — налаштування routing правил у proxy
-* `Fix for healthcheck site` — впровадження docker healthcheck
-* `Add reliability script` — базовий watchdog-скрипт
-* `Fix docker compose yml` — оптимізація мереж та залежностей
-* `Reliability script update` — покращення стабільності моніторингу
+## Final
+Середовище Debian 12 успішно підготовлене для роботи з проектом TechTask BullsMedia.
+Git встановлено для керування репозиторіями.
+Docker налаштований для контейнеризації та запуску сервісів.
+UFW Firewall активний, дозволяє лише SSH та HTTP‑трафік.
+Systemd‑сервіс забезпечує автозапуск скрипта all-services-check.sh при старті VM.
